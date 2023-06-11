@@ -1,0 +1,42 @@
+.root {
+  margin-top: 36px;
+  max-width: 786px;
+  min-height: 388px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.border2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.border3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.border4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.image {
+  position: relative;
+}
+
+.video {
+}

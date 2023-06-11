@@ -1,0 +1,20 @@
+@import '../../styles/variable.module.scss';
+
+.navRow {
+  width: 744px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  @include navText;
+  color: $color-white;
+  text-transform: uppercase;
+
+  li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

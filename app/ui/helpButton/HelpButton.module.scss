@@ -1,0 +1,33 @@
+.root {
+  width: 267px;
+  height: 70px;
+
+  background: #f7f7f7;
+  border: 1px solid #000000;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 40px),
+    calc(100% - 60px) 100%,
+    0 100%
+  );
+
+  font-family: var(--font-roboto);
+
+  font-weight: 800 !important;
+  font-size: 18px;
+  line-height: 27px;
+
+  text-align: center;
+  letter-spacing: 0.629167px;
+  text-transform: uppercase;
+
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.45));
+
+  transition: transform 0.1s ease-in-out;
+
+  &:active {
+    transform: translateY(3px);
+  }
+}
