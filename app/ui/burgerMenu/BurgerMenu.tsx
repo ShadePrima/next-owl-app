@@ -11,7 +11,7 @@ import Navigation from '@/app/components/navigation/Navigation'
 import styles from './BurgerMenu.module.scss'
 
 const BurgerMenu = () => {
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = React.useState(false)
   const [imageKey, setImageKey] = React.useState(0)
 
   console.log(open, 'open')
@@ -24,7 +24,7 @@ const BurgerMenu = () => {
   return (
     <>
       <div className={styles.flexContainer}>
-        {open && <Navigation display='flex' />}
+        {open && <Navigation open={open} display='flex' />}
 
         <button onClick={openMenu} className={styles.root}>
           {open ? (

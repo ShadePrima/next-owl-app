@@ -14,7 +14,7 @@ type Props = {
 const Navigation = ({ open, display }: Props) => {
   return (
     <ul
-      className={open ? styles.navRow : styles.navBurger}
+      className={open ? styles.navBurger : styles.navRow}
       style={{ display: display }}
     >
       {navigationList.map((item) => (
