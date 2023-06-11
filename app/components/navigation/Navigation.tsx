@@ -6,9 +6,17 @@ import { navigationList } from '../../data/navigationList'
 
 const roboto = Roboto({ weight: '700', subsets: ['latin'] })
 
-const Navigation = () => {
+type Props = {
+  open?: boolean
+  display?: string
+}
+
+const Navigation = ({ open, display }: Props) => {
   return (
-    <ul className={styles.navRow}>
+    <ul
+      className={open ? styles.navRow : styles.navBurger}
+      style={{ display: display }}
+    >
       {navigationList.map((item) => (
         <li className={roboto.className} key={item.id}>
           {item.name}

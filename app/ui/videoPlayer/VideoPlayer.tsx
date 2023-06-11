@@ -27,7 +27,7 @@ const VideoPlayer = () => {
     height: '348',
     width: screenWidth - 50,
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
     },
   }
 

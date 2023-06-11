@@ -1,11 +1,14 @@
 import React from 'react'
-import styles from './Header.module.scss'
-import Image from 'next/image'
-import logo from '../../assets/image/logo.svg'
+
 import Navigation from '../navigation/Navigation'
 import HelpButton from '@/app/ui/helpButton/HelpButton'
 import JoinButton from '@/app/ui/joinButton/JoinButton'
 import VideoPlayer from '@/app/ui/videoPlayer/VideoPlayer'
+
+import styles from './Header.module.scss'
+import Image from 'next/image'
+import logo from '../../assets/image/logo.svg'
+import BurgerMenu from '@/app/ui/burgerMenu/BurgerMenu'
 
 const Header = () => {
   return (
@@ -16,6 +19,7 @@ const Header = () => {
         <div className={styles.logoRow}>
           <Image src={logo} alt='logo' />
           <Navigation />
+          <BurgerMenu />
         </div>
 
         <div className={styles.contentBlock}>
