@@ -1,0 +1,36 @@
+@import '../../styles/variable.module.scss';
+
+.mobileTitle {
+  position: relative;
+  width: 396px;
+  min-height: 100px;
+
+  display: none;
+
+  @media (max-width: 425px) {
+    display: block;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+
+    mix-blend-mode: darken;
+    height: 100px;
+  }
+
+  h1 {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+
+    font-weight: 400;
+    font-size: 36px;
+    // line-height: 50px;
+
+    color: $color-white;
+  }
+}

@@ -4,6 +4,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 425px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 /* Reset and base styles  */
 * {
   padding: 0px;

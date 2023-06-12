@@ -8,8 +8,7 @@ import VideoPlayer from '@/app/ui/videoPlayer/VideoPlayer'
 import styles from './Header.module.scss'
 import Image from 'next/image'
 import logo from '../../assets/image/logo.svg'
-import BurgerMenu from '@/app/ui/burgerMenu/BurgerMenu'
-import BurgerMenuLib from '../BurgerMenuLib/BurgerMenuLib'
+import BurgerMenu from '@/app/components/burgerMenu/BurgerMenu'
 
 const Header = () => {
   return (

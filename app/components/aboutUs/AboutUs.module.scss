@@ -24,11 +24,16 @@
   display: flex;
 
   margin-right: 7px;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 }
 
 .logoBg {
   width: 193px;
   height: 193px;
+  mix-blend-mode: hard-light;
 }
 
 .logoText {

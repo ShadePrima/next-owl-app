@@ -2,12 +2,13 @@ import React from 'react'
 
 import Image from 'next/image'
 import line from '../../assets/icons/line.svg'
-import bg from '../../assets/image/bg-title.png'
+import bg from '../../assets/image/bg-title-1.png'
 
 import { Roboto } from 'next/font/google'
 const roboto = Roboto({ weight: '700', subsets: ['latin'] })
 
 import styles from './AboutUs.module.scss'
+import MobileTitle from '@/app/ui/mobileTitle/MobileTitle'
 
 const AboutUs = () => {
   return (
@@ -25,6 +26,7 @@ const AboutUs = () => {
             </h3>
           </div>
         </div>
+        <MobileTitle title='Про нас' lineHeight='50px' />
 
         <p className={`${styles.text} ${styles.text1}`}>
           Історія нашого підрозділу розпочалась з повномасштабним вторгненням
@@ -34,7 +36,6 @@ const AboutUs = () => {
           разом. Так розпочала свій шлях наша, на той момент, невелика
           розвідувальна група.
         </p>
-
         <p className={styles.text}>
           Але насправді наша історія розпочалась значно раніше… Підрозділ
           формується з особистостей, де кожна з них зі своєю історією та
