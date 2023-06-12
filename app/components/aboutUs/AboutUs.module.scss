@@ -1,9 +1,90 @@
 @import '../../styles/variable.module.scss';
 
 .root {
+  padding-top: 62px;
   background: $background;
 }
 
-.logo {
-  //   background-image: url('../../assets/image/bg-title.png');
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+
+  @media (max-width: 1218px) {
+    justify-content: start;
+  }
+
+  @media (max-width: 823px) {
+    justify-content: center;
+  }
 }
+
+.logo {
+  display: flex;
+
+  margin-right: 7px;
+}
+
+.logoBg {
+  width: 193px;
+  height: 193px;
+}
+
+.logoText {
+  width: 195px;
+  height: 228px;
+
+  padding-top: 25px;
+  position: relative;
+  left: -100px;
+
+  .firstLine {
+    display: flex;
+    align-items: start;
+    gap: 6px;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 50px;
+
+    color: $color-white;
+  }
+
+  h3 {
+    padding-left: 13px;
+    padding-top: 22px;
+
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 25px;
+
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+
+  span {
+    color: $color-red;
+  }
+}
+
+.text {
+  margin-left: 42px;
+  width: 340px;
+
+  @include text2;
+  color: $color-white;
+
+  @media (max-width: 823px) {
+    margin-top: 36px;
+  }
+}
+
+// @media (max-width: 823px) {
+//   .text1 {
+//     margin-top: 36px;
+//   }
+// }
