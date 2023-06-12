@@ -1,50 +1,55 @@
 'use client'
 
-import React from 'react'
-
-import burger from '../../assets/icons/burger.svg'
-import close from '../../assets/icons/nav-close.svg'
-
-import Image from 'next/image'
-import Navigation from '@/app/components/navigation/Navigation'
-
+import { useState } from 'react'
+import Link from 'next/link'
 import styles from './BurgerMenu.module.scss'
 
 const BurgerMenu = () => {
-  const [open, setOpen] = React.useState(false)
-  const [imageKey, setImageKey] = React.useState(0)
+  const [isOpen, setIsOpen] = useState(false)
 
-  console.log(open, 'open')
-
-  const openMenu = () => {
-    setOpen(!open)
-    setImageKey((prevKey) => prevKey + 1)
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
   }
 
   return (
-    <>
-      <div className={styles.flexContainer}>
-        {open && <Navigation open={open} display='flex' />}
+    <div className={styles.burgerMenu}>
+      <button
+        className={`${styles.burgerIcon} ${isOpen ? styles.open : ''}`}
+        onClick={toggleMenu}
+      >
+        <span
+          className={`${styles.burgerLine} ${isOpen ? styles.open : ''}`}
+        ></span>
+        <span
+          className={`${styles.burgerLine} ${isOpen ? styles.open : ''}`}
+        ></span>
+        <span
+          className={`${styles.burgerLine} ${isOpen ? styles.open : ''}`}
+        ></span>
+      </button>
 
-        <button onClick={openMenu} className={styles.root}>
-          {open ? (
-            <Image
-              className={styles.close}
-              key={imageKey}
-              width='30'
-              height='30'
-              src={close}
-              alt='close'
-              priority
-            />
-          ) : (
-            <Image key={imageKey} src={burger} alt='burger' priority />
-          )}
-        </button>
+      <div className={`${styles.menuContainer} ${isOpen ? styles.open : ''}`}>
+        <nav className={`${styles.menuItems}`}>
+          <ul>
+            <li>
+              <button onClick={toggleMenu}>
+                <Link href='/'>Home</Link>
+              </button>
+            </li>
+            <li>
+              <button onClick={toggleMenu}>
+                <Link href='/'>About</Link>
+              </button>
+            </li>
+            <li>
+              <button onClick={toggleMenu}>
+                <Link href='/'>Contact</Link>
+              </button>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      {open && <div className={styles.overlay}></div>}
-    </>
+    </div>
   )
 }
 

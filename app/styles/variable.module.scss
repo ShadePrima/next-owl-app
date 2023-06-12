@@ -6,6 +6,9 @@ $color-dark: #262626;
 $color-red: #df2e38;
 $color-dark-gray: #595959;
 
+//background
+$background: linear-gradient(90deg, #1d1919 2.56%, #541e1e 100%);
+
 // fonsts
 @mixin title1() {
   font-weight: 900;
