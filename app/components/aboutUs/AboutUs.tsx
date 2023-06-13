@@ -9,6 +9,7 @@ const roboto = Roboto({ weight: '700', subsets: ['latin'] })
 
 import styles from './AboutUs.module.scss'
 import MobileTitle from '@/app/ui/mobileTitle/MobileTitle'
+import SwiperGallery from '../swiperGallery/SwiperGallery'
 
 const AboutUs = () => {
   return (
@@ -46,6 +47,8 @@ const AboutUs = () => {
           формує.
         </p>
       </div>
+
+      <SwiperGallery />
     </div>
   )
 }
