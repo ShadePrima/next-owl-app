@@ -14,6 +14,9 @@ import SwiperGallery from '../swiperGallery/SwiperGallery'
 const AboutUs = () => {
   return (
     <div className={`${styles.root} `}>
+      <div className='container'>
+        <MobileTitle title='Про нас' lineHeight='50px' />
+      </div>
       <div className={`${'container'} ${styles.content}`}>
         <div className={styles.logo}>
           <Image className={styles.logoBg} src={bg} alt='bg' />
@@ -27,7 +30,6 @@ const AboutUs = () => {
             </h3>
           </div>
         </div>
-        <MobileTitle title='Про нас' lineHeight='50px' />
 
         <p className={`${styles.text} ${styles.text1}`}>
           Історія нашого підрозділу розпочалась з повномасштабним вторгненням

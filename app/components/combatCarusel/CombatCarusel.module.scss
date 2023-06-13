@@ -1,0 +1,54 @@
+@import '../../styles/variable.module.scss';
+
+.card {
+  width: 326px;
+  height: 686px;
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    letter-spacing: 0.629167;
+    color: $color-white;
+  }
+
+  li {
+    margin-top: 6px;
+    margin-left: 17px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.629167px;
+    color: $color-white;
+
+    list-style: outside;
+  }
+}
+
+.lineTop {
+  margin-top: 36px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  top: 18px;
+}
+
+.title {
+  margin-top: 22px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 45px;
+
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  color: $color-red;
+
+  margin-bottom: 6px;
+}
+
+.text2 {
+  margin-top: 24px;
+}

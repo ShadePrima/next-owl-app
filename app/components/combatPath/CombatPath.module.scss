@@ -1,0 +1,38 @@
+@import '../../styles/variable.module.scss';
+
+.root {
+  padding-top: 106px;
+  background: $background;
+
+  @media (max-width: 425px) {
+    padding-top: 0;
+  }
+}
+
+.titleRow {
+  height: 193px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 38px;
+
+  margin-top: 76px;
+}
+
+.buttonLeft,
+.buttonRight {
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: translateY(4px);
+  }
+}

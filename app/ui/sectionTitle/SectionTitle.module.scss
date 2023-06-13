@@ -1,0 +1,46 @@
+@import '../../styles/variable.module.scss';
+
+.title {
+  position: relative;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+
+.titleText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+
+  padding-top: 42px;
+  margin-left: 88px;
+
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 45px;
+
+    color: $color-white;
+  }
+}
+
+.text2 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 45px;
+
+  padding-left: 245px;
+
+  color: $color-white;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  mix-blend-mode: darken;
+}
