@@ -1,6 +1,7 @@
 @import '../../styles/variable.module.scss';
 
 .card {
+  position: relative;
   width: 326px;
   height: 686px;
 
@@ -51,4 +52,15 @@
 
 .text2 {
   margin-top: 24px;
+}
+
+.plusButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: transform 0.3s ease;
+
+  &:active {
+    transform: translateY(3px);
+  }
 }

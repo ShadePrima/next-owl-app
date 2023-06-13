@@ -10,7 +10,7 @@ const roboto = Roboto({ weight: '400', subsets: ['latin'] })
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-import img from '../../assets/image/about-us-2.png'
+import plusButton from '../../assets/icons/plus.svg'
 import pricel from '../../assets/icons/red-pricel.svg'
 import Image from 'next/image'
 
@@ -78,6 +78,12 @@ export default function CombatCarusel({ next, prev, sliderRef }: Props) {
                 {item.li1 && <li>{item.li1}</li>}
                 {item.li2 && <li>{item.li2}</li>}
               </ul>
+
+              <Image
+                className={styles.plusButton}
+                src={plusButton}
+                alt='plus'
+              />
             </div>
           </div>
         ))}
