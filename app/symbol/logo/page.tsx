@@ -12,7 +12,11 @@ export default function Logo() {
   return (
     <div className={styles.root}>
       <div className='container'>
-        <MobileTitle idValue='symbol' title='Символіка' />
+        <MobileTitle
+          idValue='symbol'
+          title='Символіка'
+          routes={routes.symbol}
+        />
         <Link href={routes.symbol}>
           <SectionTitle textTop='Символіка' />
         </Link>

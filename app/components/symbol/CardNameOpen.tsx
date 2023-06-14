@@ -12,7 +12,7 @@ import routes from '@/routes'
 
 const CardNameOpen = () => {
   return (
-    <div className={styles.card}>
+    <div id='card-name-open' className={styles.card}>
       <div className={styles.textLogo}>
         <h2>Ґерць</h2>
         <h3>-</h3>
