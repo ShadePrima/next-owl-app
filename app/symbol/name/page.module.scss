@@ -1,0 +1,27 @@
+@import '../../styles/variable.module.scss';
+
+.root {
+  background: $background;
+}
+
+.root {
+  padding-top: 32px;
+  background: $background;
+
+  @media (max-width: 425px) {
+    padding-top: 32px;
+  }
+}
+
+.contentRow {
+  margin-top: 95px;
+
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @media (max-width: 425px) {
+    margin-top: 32px;
+  }
+}
