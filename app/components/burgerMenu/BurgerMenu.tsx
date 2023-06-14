@@ -46,6 +46,11 @@ const BurgerMenu = () => {
                 <Link href='/#combat-path'>Бойовий шлях</Link>
               </button>
             </li>
+            <li>
+              <button onClick={toggleMenu}>
+                <Link href='/#symbol'>Символіка</Link>
+              </button>
+            </li>
           </ul>
         </nav>
       </div>

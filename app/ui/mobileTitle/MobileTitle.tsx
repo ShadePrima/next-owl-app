@@ -11,6 +11,7 @@ import styles from './MobileTitle.module.scss'
 type Props = {
   title: string
   lineHeight?: string
+  idValue: string
 }
 
 /**
@@ -19,9 +20,9 @@ type Props = {
  * @returns mobile title (425px max width screen)
  */
 
-const MobileTitle = ({ title, lineHeight = '50px' }: Props) => {
+const MobileTitle = ({ title, lineHeight = '50px', idValue }: Props) => {
   return (
-    <div className={styles.mobileTitle}>
+    <div id={idValue} className={styles.mobileTitle}>
       <h1 className={roboto.className} style={{ lineHeight: lineHeight }}>
         {title}
       </h1>

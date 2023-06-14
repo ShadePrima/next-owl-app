@@ -14,7 +14,7 @@ const Symbol = () => {
   return (
     <div className={styles.root}>
       <div className='container'>
-        <MobileTitle title='Символіка' />
+        <MobileTitle idValue='symbol' title='Символіка' />
         <SectionTitle textTop='Символіка' />
         <div className={styles.contentRow}>
           <div className={styles.card}>

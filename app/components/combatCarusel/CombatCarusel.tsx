@@ -79,11 +79,11 @@ export default function CombatCarusel({ next, prev, sliderRef }: Props) {
                 {item.li2 && <li>{item.li2}</li>}
               </ul>
 
-              <Image
+              {/* <Image
                 className={styles.plusButton}
                 src={plusButton}
                 alt='plus'
-              />
+              /> */}
             </div>
           </div>
         ))}

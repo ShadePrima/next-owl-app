@@ -16,9 +16,10 @@ import styles from './AboutUs.module.scss'
 
 const AboutUs = () => {
   return (
-    <div id='about-us' className={`${styles.root} `}>
+    <div className={`${styles.root} `}>
       <div className='container'>
-        <MobileTitle title='Про нас' lineHeight='50px' />
+        <div></div>
+        <MobileTitle idValue='about-us' title='Про нас' lineHeight='50px' />
       </div>
       <div className={`${'container'} ${styles.content}`}>
         <div className={styles.logo}>

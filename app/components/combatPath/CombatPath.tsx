@@ -32,7 +32,7 @@ const CombatPath = () => {
   }
 
   return (
-    <div id='combat-path' className={styles.root}>
+    <div className={styles.root}>
       <div className={`${styles.titleRow} ${'container'}`}>
         <SectionTitle textTop='Бойовий шлях' />
         <div className={styles.buttons}>
@@ -45,7 +45,11 @@ const CombatPath = () => {
         </div>
       </div>
       <div className='container'>
-        <MobileTitle title='Бойовий шлях' lineHeight='50px' />
+        <MobileTitle
+          idValue='combat-path'
+          title='Бойовий шлях'
+          lineHeight='50px'
+        />
       </div>
 
       <CombatCarusel
