@@ -38,12 +38,12 @@ const BurgerMenu = () => {
             </li>
             <li>
               <button onClick={toggleMenu}>
-                <Link href='/'>About</Link>
+                <Link href='/#about-us'>Про нас</Link>
               </button>
             </li>
             <li>
               <button onClick={toggleMenu}>
-                <Link href='/'>Contact</Link>
+                <Link href='/#combat-path'>Бойовий шлях</Link>
               </button>
             </li>
           </ul>

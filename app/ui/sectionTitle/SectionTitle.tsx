@@ -14,6 +14,12 @@ type Props = {
   textBottom?: string
 }
 
+/**
+ *
+ * @param textTop is require
+ * @returns
+ */
+
 const SectionTitle = ({ textTop, textBottom }: Props) => {
   return (
     <div className={styles.title}>
