@@ -7,9 +7,12 @@ import bg from '../../assets/image/bg-title-1.png'
 import { Roboto } from 'next/font/google'
 const roboto = Roboto({ weight: '700', subsets: ['latin'] })
 
-import styles from './AboutUs.module.scss'
 import MobileTitle from '@/app/ui/mobileTitle/MobileTitle'
 import SwiperGallery from '../swiperGallery/SwiperGallery'
+
+import { aboutUsList } from '@/app/data/aboutUsList'
+
+import styles from './AboutUs.module.scss'
 
 const AboutUs = () => {
   return (
@@ -31,23 +34,8 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <p className={`${styles.text} ${styles.text1}`}>
-          Історія нашого підрозділу розпочалась з повномасштабним вторгненням
-          російських окупантів 24-го лютого 2022 року. Тоді невеличке коло
-          друзів-однодумців, рухомих спільною метою захищати Батьківщину до
-          Перемоги, сконтактувались, та прийняли рішення рухатись до цієї мети
-          разом. Так розпочала свій шлях наша, на той момент, невелика
-          розвідувальна група.
-        </p>
-        <p className={styles.text}>
-          Але насправді наша історія розпочалась значно раніше… Підрозділ
-          формується з особистостей, де кожна з них зі своєю історією та
-          життєвим шляхом, а отже коли усі ці люди зібрались разом, вони
-          закумулювали свій життєвий досвід, навички, знання, аби об‘єднати
-          зусилля. Кожен тим, чим може, та в чому сильний. Тому історія
-          підрозділу нерозривно пов‘язана з історією кожної особистості, що його
-          формує.
-        </p>
+        <p className={`${styles.text} ${styles.text1}`}>{aboutUsList.text1}</p>
+        <p className={styles.text}>{aboutUsList.text2}</p>
       </div>
 
       <SwiperGallery />
