@@ -3,6 +3,7 @@ import styles from './page.module.scss'
 import Header from '@/app/components/header/Header'
 import AboutUs from './components/aboutUs/AboutUs'
 import CombatPath from './components/combatPath/CombatPath'
+import Quote from './components/quote/Quote'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <AboutUs />
       <CombatPath />
+      <Quote />
     </main>
   )
 }
