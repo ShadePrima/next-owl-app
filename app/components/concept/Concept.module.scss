@@ -1,0 +1,47 @@
+@import '../../styles/variable.module.scss';
+
+.root {
+  padding-top: 118px;
+  background: $background;
+
+  @media (max-width: 425px) {
+    padding-top: 48px;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 62px;
+  flex-wrap: wrap;
+}
+
+.content {
+  margin-top: 108px;
+  max-width: 508px;
+}
+
+.leftColumn {
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+
+.contentItem {
+  margin-top: 12px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 20px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  letter-spacing: 0.629167px;
+
+  color: #ffffff;
+}

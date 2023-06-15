@@ -5,6 +5,7 @@ import AboutUs from './components/aboutUs/AboutUs'
 import CombatPath from './components/combatPath/CombatPath'
 import Quote from './components/quote/Quote'
 import Symbol from './components/symbol/Symbol'
+import Concept from './components/concept/Concept'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <CombatPath />
       <Quote />
       <Symbol />
+      <Concept />
     </main>
   )
 }
