@@ -1,5 +1,13 @@
 @import '../../styles/variable.module.scss';
 
+.root {
+  display: none;
+
+  @media (max-width: 425px) {
+    display: block;
+  }
+}
+
 .slider {
   width: 320px;
 }

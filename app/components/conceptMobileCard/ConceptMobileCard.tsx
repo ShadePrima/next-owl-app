@@ -30,7 +30,7 @@ export default function ConceptMobileCard() {
   }
 
   return (
-    <div className='container'>
+    <div className={`${'container'} ${styles.root}`}>
       <Slider className={styles.slider} {...settings}>
         {conceptMobileList.map((item: any) => (
           <div key={item.id}>

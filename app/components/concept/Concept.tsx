@@ -16,7 +16,7 @@ import ConceptMobileCard from '../conceptMobileCard/ConceptMobileCard'
 
 const Concept = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className={`${'container'} ${styles.flexContainer}`}>
         <MobileTitle
           title='Концепція підрозділу'
@@ -41,7 +41,7 @@ const Concept = () => {
           <Image src={conceptImg} alt='img' />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

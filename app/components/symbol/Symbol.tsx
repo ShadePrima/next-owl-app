@@ -17,7 +17,7 @@ import routes from '@/routes'
 
 const Symbol = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className='container'>
         <MobileTitle idValue='symbol' title='Символіка' />
 
@@ -28,7 +28,7 @@ const Symbol = () => {
           <CardName />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

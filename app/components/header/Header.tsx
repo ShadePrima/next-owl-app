@@ -12,7 +12,7 @@ import BurgerMenu from '@/app/components/burgerMenu/BurgerMenu'
 
 const Header = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className={styles.backgraundNav}></div>
 
       <div className='container'>
@@ -32,7 +32,7 @@ const Header = () => {
           <VideoPlayer />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

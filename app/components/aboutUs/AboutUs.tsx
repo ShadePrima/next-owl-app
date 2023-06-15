@@ -16,7 +16,7 @@ import styles from './AboutUs.module.scss'
 
 const AboutUs = () => {
   return (
-    <div className={`${styles.root} `}>
+    <section className={`${styles.root} `}>
       <div className='container'>
         <div></div>
         <MobileTitle idValue='about-us' title='Про нас' lineHeight='50px' />
@@ -40,7 +40,7 @@ const AboutUs = () => {
       </div>
 
       <SwiperGallery />
-    </div>
+    </section>
   )
 }
 

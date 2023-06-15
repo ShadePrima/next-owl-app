@@ -32,7 +32,7 @@ const CombatPath = () => {
   }
 
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className={`${styles.titleRow} ${'container'}`}>
         <SectionTitle textTop='Бойовий шлях' />
         <div className={styles.buttons}>
@@ -57,7 +57,7 @@ const CombatPath = () => {
         prev={handlePrev}
         sliderRef={sliderRef}
       />
-    </div>
+    </section>
   )
 }
 

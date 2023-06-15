@@ -10,7 +10,7 @@ import styles from './Quote.module.scss'
 
 const Quote = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className={`${'container'} ${styles.textContainer}`}>
         <h1 className={russo.className}>
           Коли сильні особистості з твердою метою об‘єднуються <br /> — вони
@@ -20,7 +20,7 @@ const Quote = () => {
 
         <Image className={styles.bg} src={bg} alt='background' />
       </div>
-    </div>
+    </section>
   )
 }
 
