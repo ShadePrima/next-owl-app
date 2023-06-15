@@ -8,6 +8,12 @@ import Link from 'next/link'
 import routes from '@/routes'
 import ShoutingOut from '@/app/components/shoutingOut/ShoutingOut'
 
+export const metadata = {
+  title: 'Лого',
+  description:
+    'На нашій символіці зображено скелет сови, що тримає спис у вигляді тризуба.',
+}
+
 export default function Logo() {
   return (
     <div className={styles.root}>

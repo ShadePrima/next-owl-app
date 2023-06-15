@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Owl App',
-  description: 'Доля допомагає хоробрим',
+  description: 'Сайт підрозділу Герць',
 }
 
 export default function RootLayout({

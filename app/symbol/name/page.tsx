@@ -8,6 +8,11 @@ import routes from '@/routes'
 import Link from 'next/link'
 import ShoutingOut from '@/app/components/shoutingOut/ShoutingOut'
 
+export const metadata = {
+  title: 'Назва',
+  description: 'Чому Герць?',
+}
+
 export default function Logo() {
   return (
     <div className={styles.root}>
