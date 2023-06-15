@@ -4,14 +4,14 @@
   padding-top: 118px;
   background: $background;
 
-  @media (max-width: 425px) {
+  @media (max-width: 620px) {
     padding-top: 48px;
   }
 }
 
 .flexContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 62px;
   flex-wrap: wrap;
 }
@@ -22,7 +22,7 @@
 }
 
 .leftColumn {
-  @media (max-width: 425px) {
+  @media (max-width: 620px) {
     display: none;
   }
 }

@@ -6,15 +6,22 @@
 
   background: $background;
 
-  @media (max-width: 425px) {
+  @media (max-width: 620px) {
     padding-top: 1px;
   }
+}
+
+.bgTest {
+  background-image: url('../../assets/background/help-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg {
   position: relative;
 
-  @media (max-width: 425px) {
+  @media (max-width: 620px) {
     display: none;
   }
 }
@@ -43,7 +50,7 @@
   color: $color-white;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 620px) {
   .text {
     margin-top: 72px;
   }
@@ -101,7 +108,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 620px) {
   .contentRow {
     margin-top: 40px;
     gap: 72px;
@@ -138,7 +145,7 @@
   text-align: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 620px) {
   .fondTitle {
     font-size: 35px;
   }
@@ -170,7 +177,7 @@
   left: 76px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 620px) {
   .joinImage {
     left: 60px;
   }

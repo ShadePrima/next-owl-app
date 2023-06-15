@@ -21,7 +21,7 @@ type Props = {
  *
  * @param lineHeight require a value in this '50'px format
  * @param idValue
- * @returns mobile title (425px max width screen)
+ * @returns mobile title (620px max width screen)
  */
 
 const MobileTitle = ({

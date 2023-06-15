@@ -23,18 +23,20 @@ import styles from './Help.module.scss'
 const Help = () => {
   return (
     <section className={styles.root}>
-      <div className={`${'container'} ${styles.bg}`}>
-        <div className={styles.text}>
-          <h1 className={russo.className}>
-            Твоя допомога важлива <br />
-            для спільної перемоги
-          </h1>
-          <Image className={styles.triangle1} src={triangle} alt='triange' />
-          <Image className={styles.triangle2} src={triangle} alt='triange' />
-          <Image className={styles.triangle3} src={triangle} alt='triange' />
-          <Image className={styles.triangle4} src={triangle} alt='triange' />
+      <div className={styles.bgTest}>
+        <div className={`${'container'} ${styles.bg}`}>
+          <div className={styles.text}>
+            <h1 className={russo.className}>
+              Твоя допомога важлива <br />
+              для спільної перемоги
+            </h1>
+            <Image className={styles.triangle1} src={triangle} alt='triange' />
+            <Image className={styles.triangle2} src={triangle} alt='triange' />
+            <Image className={styles.triangle3} src={triangle} alt='triange' />
+            <Image className={styles.triangle4} src={triangle} alt='triange' />
+          </div>
+          {/* <Image className={styles.bgImage} src={bg} alt='bg' /> */}
         </div>
-        <Image className={styles.bgImage} src={bg} alt='bg' />
       </div>
 
       <div className={`${'container'} ${styles.title}`}>
