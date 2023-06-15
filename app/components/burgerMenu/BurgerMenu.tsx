@@ -36,19 +36,34 @@ const BurgerMenu = () => {
                 <Link href='/'>Home</Link>
               </button>
             </li>
+
             <li>
               <button onClick={toggleMenu}>
                 <Link href='/#about-us'>Про нас</Link>
               </button>
             </li>
+
             <li>
               <button onClick={toggleMenu}>
                 <Link href='/#combat-path'>Бойовий шлях</Link>
               </button>
             </li>
+
             <li>
               <button onClick={toggleMenu}>
                 <Link href='/#symbol'>Символіка</Link>
+              </button>
+            </li>
+
+            <li>
+              <button onClick={toggleMenu}>
+                <Link href='/#concept'>Концепція підрозділу</Link>
+              </button>
+            </li>
+
+            <li>
+              <button onClick={toggleMenu}>
+                <Link href='/#help'>Допомогти підрозділу</Link>
               </button>
             </li>
           </ul>

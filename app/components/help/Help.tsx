@@ -13,14 +13,16 @@ import hands from '../../assets/icons/hands.svg'
 import soldier from '../../assets/image/soldier.png'
 import arrowBottom from '../../assets/icons/arrow-bottom .svg'
 
-import styles from './Help.module.scss'
 import SectionTitle from '@/app/ui/sectionTitle/SectionTitle'
 import HelpButton from '@/app/ui/helpButton/HelpButton'
 import JoinButton from '@/app/ui/joinButton/JoinButton'
+import MobileTitle from '@/app/ui/mobileTitle/MobileTitle'
+
+import styles from './Help.module.scss'
 
 const Help = () => {
   return (
-    <section id='help' className={styles.root}>
+    <section className={styles.root}>
       <div className={`${'container'} ${styles.bg}`}>
         <div className={styles.text}>
           <h1 className={russo.className}>
@@ -37,6 +39,14 @@ const Help = () => {
 
       <div className={`${'container'} ${styles.title}`}>
         <SectionTitle textTop='Допомогти' textBottom='підрозділу' />
+      </div>
+
+      <div className='container'>
+        <MobileTitle
+          title='Допомогти підрозділу'
+          lineHeight='50px'
+          idValue='help'
+        />
       </div>
 
       <div className={`${styles.contentRow} ${'container'}`}>

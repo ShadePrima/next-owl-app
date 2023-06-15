@@ -7,6 +7,7 @@ import Quote from './components/quote/Quote'
 import Symbol from './components/symbol/Symbol'
 import Concept from './components/concept/Concept'
 import Help from './components/help/Help'
+import Footer from './components/footer/Footer'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Symbol />
       <Concept />
       <Help />
+      <Footer />
     </main>
   )
 }

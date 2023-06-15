@@ -20,6 +20,7 @@ type Props = {
 /**
  *
  * @param lineHeight require a value in this '50'px format
+ * @param idValue
  * @returns mobile title (425px max width screen)
  */
 
