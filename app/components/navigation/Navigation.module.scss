@@ -19,34 +19,38 @@
     cursor: pointer;
   }
 
+  a {
+    color: $color-white;
+  }
+
   @media (max-width: 560px) {
     display: none;
   }
 }
 
-.navBurger {
-  max-width: 744px;
-  position: relative;
-  left: -155px;
+// .navBurger {
+//   max-width: 744px;
+//   position: relative;
+//   left: -155px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap;
-  gap: 12px;
-  z-index: 11;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: start;
+//   flex-wrap: wrap;
+//   gap: 12px;
+//   z-index: 11;
 
-  @include navText;
-  color: $color-white;
-  text-transform: uppercase;
+//   @include navText;
+//   color: $color-white;
+//   text-transform: uppercase;
 
-  li:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+//   li:hover {
+//     text-decoration: underline;
+//     cursor: pointer;
+//   }
 
-  @media (max-width: 620px) {
-    display: none;
-  }
-}
+//   @media (max-width: 620px) {
+//     display: none;
+//   }
+// }

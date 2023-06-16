@@ -22,7 +22,7 @@ import styles from './Help.module.scss'
 
 const Help = () => {
   return (
-    <section className={styles.root}>
+    <section id='help' className={styles.root}>
       <div className={styles.bgTest}>
         <div className={`${'container'} ${styles.bg}`}>
           <div className={styles.text}>
