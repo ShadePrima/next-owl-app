@@ -12,7 +12,7 @@ import BurgerMenu from '@/app/components/burgerMenu/BurgerMenu'
 
 const Header = () => {
   return (
-    <header className={styles.root}>
+    <header id='header' className={styles.root}>
       <div className={styles.backgraundNav}></div>
 
       <div className='container'>

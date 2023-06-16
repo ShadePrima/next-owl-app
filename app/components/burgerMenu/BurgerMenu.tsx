@@ -33,7 +33,7 @@ const BurgerMenu = () => {
           <ul>
             <li>
               <button onClick={toggleMenu}>
-                <Link href='/'>Home</Link>
+                <Link href='/#header'>Home</Link>
               </button>
             </li>
 
