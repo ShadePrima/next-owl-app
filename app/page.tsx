@@ -12,7 +12,7 @@ import Footer from './components/footer/Footer'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Header />
+      {/* <Header /> */}
       <AboutUs />
       <CombatPath />
       <Quote />
